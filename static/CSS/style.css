@@ -1,0 +1,16 @@
+body{
+    background-color: #212529
+}
+
+.card-cover{
+    background-color: rgba(255, 255, 255, .4);
+    backdrop-filter: blur(2.1px);
+}
+
+.model-1{
+    background-color: white;
+    height: 60px;
+
+}
+
+
