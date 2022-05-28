@@ -34,14 +34,25 @@ def get_recommendations(title,num, cosine_sim=cosine_sim):
     movie_indices = [i[0] for i in sim_scores]
     names=[]
     # Return the top 10 most similar movies
-    a = np.array(df2[['title','id','runtime','vote_average', 'homepage']].iloc[movie_indices])
+    a = np.array(df2[['title','id','runtime','vote_average', 'homepage','vote_count', 'overview']].iloc[movie_indices])
     for n in a:
-        names.append(n)
-
-    for n in names:
-        response = requests.get('https://api.themoviedb.org/3/movie/'+str(n[1])+'?api_key=8392ec73124468f81442d4565edccad7&language=en-US')
+        arr = []
+        arr.append(n[0])
+        arr.append(n[1])
+        arr.append(n[2])
+        arr.append(n[3])
+        arr.append(n[4])
+        response = requests.get('https://api.themoviedb.org/3/movie/'+str(arr[1])+'?api_key=8392ec73124468f81442d4565edccad7&language=en-US')
         data = response.json()
-        n[4]="https://www.themoviedb.org/movie/"+str(n[1])+"/watch"
+        path ="https://image.tmdb.org/t/p/original" + data['poster_path']
+        arr.append(path)
+        arr[4] = "https://www.themoviedb.org/movie/"+str(arr[1])+"/watch"
+        arr.append(n[5])
+        arr.append(n[6])
+        backdrop = "https://image.tmdb.org/t/p/original" + data['backdrop_path']
+        arr.append(backdrop)
+        names.append(arr)
+   
     return names
 
 # print(get_recommendations("The Dark Knight", 10))
