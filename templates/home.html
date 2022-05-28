@@ -1,0 +1,1065 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Welcome to WatchFav</title>
+
+    <!--========= Favicon ======== -->
+    <link rel="icon" href="/static//img/preview.jpg" type="image/x-icon">
+
+    <!-- ===== Bootstrap CSS ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ===== bootstrap icons ===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+    <!-- ===== Main CSS File ===== -->
+    <link href="/static/CSS/style.css" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body style="background-color: #0C111B;">
+
+    <!-- Header starts ======================================================================================= -->
+    <div class="container">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 ">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <img src="/static/img/preview.jpg" alt="Bootstrap" width="64" height="64"
+                    class="rounded-circle border border-white">
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/home" class="nav-link active px-2">Home</a></li>
+                <li><a href="/model1" class="nav-link px-2 link-light">Model-1</a></li>
+                <li><a href="/model2" class="nav-link px-2 link-light">Model-2</a></li>
+                <li><a href="/model3" class="nav-link px-2 link-light">Model-3</a></li>
+                <li><a href="/hybridmodel" class="nav-link px-2 link-light">Hybrid-Model</a></li>
+                <li><a href="#" class="nav-link px-2 link-light">About Models</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end">
+                <a href="/"> <button type="button" class="btn btn-outline-primary me-2">Landing Page</button> </a>
+            </div>
+        </header>
+    </div>
+    <!-- header ends ==================================================================================================== -->
+
+
+    <!-- crousel starts ==================================================================================================== -->
+    <div id="myCarousel" class="carousel slide mb-5 pb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
+                aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                class=""></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                class=""></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src={{carosel_movies[0][8]}} class="w-100" style="height:550px; object-fit: cover; opacity: 0.4;" alt="">
+
+                <div class="container">
+                    <div class="carousel-caption text-start shadow p-5" >
+                        <h1>{{carosel_movies[0][0]}}</h1>
+                        <p>{{carosel_movies[0][7]}}</p>
+                        <p>
+                            <form action="/movie" method="POST">
+                                <input type="text" style="display: none;" name="title" value="{{carosel_movies[0][0]}}" />
+                                <input type="text" style="display: none;" name="id" value="{{carosel_movies[0][1]}}" />
+                                <input type="text" style="display: none;" name="runtime" value="{{carosel_movies[0][2]}}" />
+                                <input type="text" style="display: none;" name="rating" value="{{carosel_movies[0][3]}}" />
+                                <input type="text" style="display: none;" name="ott" value="{{carosel_movies[0][4]}}" />
+                                <input type="text" style="display: none;" name="poster" value="{{carosel_movies[0][5]}}" />
+                                <input type="text" style="display: none;" name="vote" value="{{carosel_movies[0][6]}}" />
+                                <input type="text" style="display: none;" name="overview" value="{{carosel_movies[0][7]}}" />
+                                <input type="text" style="display: none;" name="backdrop" value="{{carosel_movies[0][8]}}" />
+                                <button class="btn btn-info" type="submit">Watch Now</button>
+                            
+                            </form>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src={{carosel_movies[1][8]}} class="w-100" style="height:550px; object-fit: cover; opacity: 0.4;" alt="">
+            
+                <div class="container">
+                    <div class="carousel-caption text-start shadow p-5">
+                        <h1>{{carosel_movies[1][0]}}</h1>
+                        <p>{{carosel_movies[1][7]}}</p>
+                        <p>
+                        <form action="/movie" method="POST">
+                            <input type="text" style="display: none;" name="title" value="{{carosel_movies[1][0]}}" />
+                            <input type="text" style="display: none;" name="id" value="{{carosel_movies[1][1]}}" />
+                            <input type="text" style="display: none;" name="runtime" value="{{carosel_movies[1][2]}}" />
+                            <input type="text" style="display: none;" name="rating" value="{{carosel_movies[1][3]}}" />
+                            <input type="text" style="display: none;" name="ott" value="{{carosel_movies[1][4]}}" />
+                            <input type="text" style="display: none;" name="poster" value="{{carosel_movies[1][5]}}" />
+                            <input type="text" style="display: none;" name="vote" value="{{carosel_movies[1][6]}}" />
+                            <input type="text" style="display: none;" name="overview" value="{{carosel_movies[1][7]}}" />
+                            <input type="text" style="display: none;" name="backdrop" value="{{carosel_movies[1][8]}}" />
+                            <button class="btn btn-info" type="submit">Watch Now</button>
+            
+                        </form>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item ">
+                <img src={{carosel_movies[2][8]}} class="w-100" style="height:550px; object-fit: cover; opacity: 0.4;" alt="">
+            
+                <div class="container">
+                    <div class="carousel-caption text-start shadow p-5">
+                        <h1>{{carosel_movies[2][0]}}</h1>
+                        <p>{{carosel_movies[2][7]}}</p>
+                        <p>
+                        <form action="/movie" method="POST">
+                            <input type="text" style="display: none;" name="title" value="{{carosel_movies[2][0]}}" />
+                            <input type="text" style="display: none;" name="id" value="{{carosel_movies[2][1]}}" />
+                            <input type="text" style="display: none;" name="runtime" value="{{carosel_movies[2][2]}}" />
+                            <input type="text" style="display: none;" name="rating" value="{{carosel_movies[2][3]}}" />
+                            <input type="text" style="display: none;" name="ott" value="{{carosel_movies[2][4]}}" />
+                            <input type="text" style="display: none;" name="poster" value="{{carosel_movies[2][5]}}" />
+                            <input type="text" style="display: none;" name="vote" value="{{carosel_movies[2][6]}}" />
+                            <input type="text" style="display: none;" name="overview" value="{{carosel_movies[2][7]}}" />
+                            <input type="text" style="display: none;" name="backdrop" value="{{carosel_movies[2][8]}}" />
+                            <button class="btn btn-info" type="submit">Watch Now</button>
+            
+                        </form>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- crousel ends ==================================================================================================== -->
+
+    <!-- Popular Movies starts ============================================================================================-->
+    <div class="popular-movies container my-5  align-items-center py-2 shadow">
+        <div class="row">
+            <div class="heading d-flex">
+                <h3 class="text-white">Most Popular Movies</h3>
+                <div style="margin-left: 900px;">
+                    <form action="/similar_movies" method="POST">
+                        <input type="text" style="display: none;" name="var" value="popular" />
+                        <button class="btn btn-primary" type="submit">See more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="movies">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    {% for r in popular_movies %}
+    
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white  rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <img src={{r[5]}} alt="">
+    
+                                <h2 class="pb-2 mt-2  display-6 lh-1 fw-bold">{{r[0]}}</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <form action="/movie" method="POST">
+                                            <input type="text" style="display: none;" name="title" value="{{r[0]}}" />
+                                            <input type="text" style="display: none;" name="id" value="{{r[1]}}" />
+                                            <input type="text" style="display: none;" name="runtime" value="{{r[2]}}" />
+                                            <input type="text" style="display: none;" name="rating" value="{{r[3]}}" />
+                                            <input type="text" style="display: none;" name="ott" value="{{r[4]}}" />
+                                            <input type="text" style="display: none;" name="poster" value="{{r[5]}}" />
+                                            <input type="text" style="display: none;" name="vote" value="{{r[6]}}" />
+                                            <input type="text" style="display: none;" name="overview" value="{{r[7]}}" />
+                                            <input type="text" style="display: none;" name="backdrop" value="{{r[8]}}" />
+                                            <button class="btn btn-info" type="submit">Watch Now</button>
+    
+                                        </form>
+    
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-star-fill me-2" width="iem" height="1em" style="color: yellow;"></i>
+                                        <small>{{r[3]}}</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-clock-fill me-2" width="iem" height="1em" style="color: black;"></i>
+                                        <small>{{r[2]}}</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--======================== Popular Movies Movies ends ==============================================================-->
+    
+    
+    <!--======================== Top rated Movies starts ============================================================-->
+    <div class="top-rated container my-5  align-items-center py-2 shadow">
+        <div class="row">
+            <div class="heading d-flex">
+                <h3 class="text-white">Top Rated Movies</h3>
+                <div style="margin-left: 900px;">
+                    <form action="/similar_movies" method="POST">
+                        <input type="text" style="display: none;" name="var" value="top_rated" />
+                        <button class="btn btn-primary" type="submit">See more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="movies">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    {% for r in top_rated_movies %}
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white  rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <img src={{r[5]}} alt="">
+    
+                                <h2 class="pb-2 mt-2  display-6 lh-1 fw-bold">{{r[0]}}</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <form action="/movie" method="POST">
+                                            <input type="text" style="display: none;" name="title" value="{{r[0]}}" />
+                                            <input type="text" style="display: none;" name="id" value="{{r[1]}}" />
+                                            <input type="text" style="display: none;" name="runtime" value="{{r[2]}}" />
+                                            <input type="text" style="display: none;" name="rating" value="{{r[3]}}" />
+                                            <input type="text" style="display: none;" name="ott" value="{{r[4]}}" />
+                                            <input type="text" style="display: none;" name="poster" value="{{r[5]}}" />
+                                            <input type="text" style="display: none;" name="vote" value="{{r[6]}}" />
+                                            <input type="text" style="display: none;" name="overview" value="{{r[7]}}" />
+                                            <input type="text" style="display: none;" name="backdrop" value="{{r[8]}}" />
+                                            <button class="btn btn-info" type="submit">Watch Now</button>
+    
+                                        </form>
+    
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-star-fill me-2" width="iem" height="1em" style="color: yellow;"></i>
+                                        <small>{{r[3]}}</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-clock-fill me-2" width="iem" height="1em" style="color: black;"></i>
+                                        <small>{{r[2]}}</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--======================== Top rated Movies Movies ends ==============================================================-->
+
+
+    <!-- trending today starts============================================================================================ -->
+            <div class="today-trending container my-5  align-items-center py-2 shadow">
+                <div class="row">
+                    <div class="heading d-flex">
+                        <h3 class="text-white">Trending Today</h3>
+                        <div style="margin-left: 900px;">
+                            <form action="/similar_movies" method="POST">
+                                <input type="text" style="display: none;" name="var" value="t_today" />
+                                <button class="btn btn-primary" type="submit">See more</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="movies">
+                        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                            {% for r in trending_movies_today %}
+                            <div class="col">
+                                <div class="card card-cover h-100 overflow-hidden text-white  rounded-4 shadow-lg">
+                                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                        <img src={{r[5]}} alt="">
+            
+                                        <h2 class="pb-2 mt-2  display-6 lh-1 fw-bold">{{r[0]}}</h2>
+                                        <ul class="d-flex list-unstyled mt-auto">
+                                            <li class="me-auto">
+                                                <form action="/movie" method="POST">
+                                                    <input type="text" style="display: none;" name="title" value="{{r[0]}}" />
+                                                    <input type="text" style="display: none;" name="id" value="{{r[1]}}" />
+                                                    <input type="text" style="display: none;" name="runtime" value="{{r[2]}}" />
+                                                    <input type="text" style="display: none;" name="rating" value="{{r[3]}}" />
+                                                    <input type="text" style="display: none;" name="ott" value="{{r[4]}}" />
+                                                    <input type="text" style="display: none;" name="poster" value="{{r[5]}}" />
+                                                    <input type="text" style="display: none;" name="vote" value="{{r[6]}}" />
+                                                    <input type="text" style="display: none;" name="overview" value="{{r[7]}}" />
+                                                    <input type="text" style="display: none;" name="backdrop" value="{{r[8]}}" />
+                                                    <button class="btn btn-info" type="submit">Watch Now</button>
+            
+                                                </form>
+            
+                                            </li>
+                                            <li class="d-flex align-items-center me-3">
+                                                <i class="bi bi-star-fill me-2" width="iem" height="1em" style="color: yellow;"></i>
+                                                <small>{{r[3]}}</small>
+                                            </li>
+                                            <li class="d-flex align-items-center">
+                                                <i class="bi bi-clock-fill me-2" width="iem" height="1em" style="color: black;"></i>
+                                                <small>{{r[2]}}</small>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- trending today ends============================================================================================ -->
+
+
+    <!-- trending this week starts============================================================================================ -->
+    <div class="week-trending container my-5  align-items-center py-2 shadow">
+        <div class="row">
+            <div class="heading d-flex">
+                <h3 class="text-white">Trending This Week</h3>
+                <div style="margin-left: 900px;">
+                    <form action="/similar_movies" method="POST">
+                        <input type="text" style="display: none;" name="var" value="t_week" />
+                        <button class="btn btn-primary" type="submit">See more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="movies">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    {% for r in trending_movies_week %}
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white  rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <img src={{r[5]}} alt="">
+                                <h2 class="pb-2 mt-2  display-6 lh-1 fw-bold">{{r[0]}}</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <form action="/movie" method="POST">
+                                            <input type="text" style="display: none;" name="title" value="{{r[0]}}" />
+                                            <input type="text" style="display: none;" name="id" value="{{r[1]}}" />
+                                            <input type="text" style="display: none;" name="runtime" value="{{r[2]}}" />
+                                            <input type="text" style="display: none;" name="rating" value="{{r[3]}}" />
+                                            <input type="text" style="display: none;" name="ott" value="{{r[4]}}" />
+                                            <input type="text" style="display: none;" name="poster" value="{{r[5]}}" />
+                                            <input type="text" style="display: none;" name="vote" value="{{r[6]}}" />
+                                            <input type="text" style="display: none;" name="overview" value="{{r[7]}}" />
+                                            <input type="text" style="display: none;" name="backdrop" value="{{r[8]}}" />
+                                            <button class="btn btn-info" type="submit">Watch Now</button>
+                                        </form>
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-star-fill me-2" width="iem" height="1em" style="color: yellow;"></i>
+                                        <small>{{r[3]}}</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-clock-fill me-2" width="iem" height="1em" style="color: black;"></i>
+                                        <small>{{r[2]}}</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- trending this week ends============================================================================================ -->
+
+
+    <!-- action movies starts============================================================================================ -->
+    <div class="week-trending container my-5  align-items-center py-2 shadow">
+        <div class="row">
+            <div class="heading d-flex" >
+                <h3 class="text-white" >Popular in Action</h3>
+                <div style="margin-left: 900px;">
+                    <form action="/similar_movies" method="POST">
+                        <input type="text" style="display: none;" name="var" value="action"/>                                      
+                        <button class="btn btn-primary" type="submit">See more</button>                                                         
+                    </form>
+                </div>
+            </div>
+            <div class="movies">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    {% for r in action_movies %}
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white  rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <img src={{r[5]}} alt="">
+    
+                                <h2 class="pb-2 mt-2  display-6 lh-1 fw-bold">{{r[0]}}</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <form action="/movie" method="POST">
+                                            <input type="text" style="display: none;" name="title" value="{{r[0]}}" />
+                                            <input type="text" style="display: none;" name="id" value="{{r[1]}}" />
+                                            <input type="text" style="display: none;" name="runtime" value="{{r[2]}}" />
+                                            <input type="text" style="display: none;" name="rating" value="{{r[3]}}" />
+                                            <input type="text" style="display: none;" name="ott" value="{{r[4]}}" />
+                                            <input type="text" style="display: none;" name="poster" value="{{r[5]}}" />
+                                            <input type="text" style="display: none;" name="vote" value="{{r[6]}}" />
+                                            <input type="text" style="display: none;" name="overview" value="{{r[7]}}" />
+                                            <input type="text" style="display: none;" name="backdrop" value="{{r[8]}}" />
+                                            <button class="btn btn-info" type="submit">Watch Now</button>
+    
+                                        </form>
+    
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-star-fill me-2" width="iem" height="1em" style="color: yellow;"></i>
+                                        <small>{{r[3]}}</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-clock-fill me-2" width="iem" height="1em" style="color: black;"></i>
+                                        <small>{{r[2]}}</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- action movies ends============================================================================================ -->
+
+
+    <!-- Drama movies starts============================================================================================ -->
+    <div class="week-trending container my-5  align-items-center py-2 shadow">
+        <div class="row">
+            <div class="heading d-flex">
+                <h3 class="text-white">Popular in Drama</h3>
+                <div style="margin-left: 900px;">
+                    <form action="/similar_movies" method="POST">
+                        <input type="text" style="display: none;" name="var" value="drama" />
+                        <button class="btn btn-primary" type="submit">See more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="movies">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    {% for r in drama_movies %}
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white  rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <img src={{r[5]}} alt="">
+    
+                                <h2 class="pb-2 mt-2  display-6 lh-1 fw-bold">{{r[0]}}</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <form action="/movie" method="POST">
+                                            <input type="text" style="display: none;" name="title" value="{{r[0]}}" />
+                                            <input type="text" style="display: none;" name="id" value="{{r[1]}}" />
+                                            <input type="text" style="display: none;" name="runtime" value="{{r[2]}}" />
+                                            <input type="text" style="display: none;" name="rating" value="{{r[3]}}" />
+                                            <input type="text" style="display: none;" name="ott" value="{{r[4]}}" />
+                                            <input type="text" style="display: none;" name="poster" value="{{r[5]}}" />
+                                            <input type="text" style="display: none;" name="vote" value="{{r[6]}}" />
+                                            <input type="text" style="display: none;" name="overview" value="{{r[7]}}" />
+                                            <input type="text" style="display: none;" name="backdrop" value="{{r[8]}}" />
+                                            <button class="btn btn-info" type="submit">Watch Now</button>
+    
+                                        </form>
+    
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-star-fill me-2" width="iem" height="1em" style="color: yellow;"></i>
+                                        <small>{{r[3]}}</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-clock-fill me-2" width="iem" height="1em" style="color: black;"></i>
+                                        <small>{{r[2]}}</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- drama movies ends============================================================================================ -->
+
+
+    <!-- romance movies starts============================================================================================ -->
+    <div class="week-trending container my-5  align-items-center py-2 shadow">
+        <div class="row">
+            <div class="heading d-flex">
+                <h3 class="text-white">Popular in Romance</h3>
+                <div style="margin-left: 900px;">
+                    <form action="/similar_movies" method="POST">
+                        <input type="text" style="display: none;" name="var" value="romance" />
+                        <button class="btn btn-primary" type="submit">See more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="movies">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    {% for r in romance_movies %}
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white  rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <img src={{r[5]}} alt="">
+    
+                                <h2 class="pb-2 mt-2  display-6 lh-1 fw-bold">{{r[0]}}</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <form action="/movie" method="POST">
+                                            <input type="text" style="display: none;" name="title" value="{{r[0]}}" />
+                                            <input type="text" style="display: none;" name="id" value="{{r[1]}}" />
+                                            <input type="text" style="display: none;" name="runtime" value="{{r[2]}}" />
+                                            <input type="text" style="display: none;" name="rating" value="{{r[3]}}" />
+                                            <input type="text" style="display: none;" name="ott" value="{{r[4]}}" />
+                                            <input type="text" style="display: none;" name="poster" value="{{r[5]}}" />
+                                            <input type="text" style="display: none;" name="vote" value="{{r[6]}}" />
+                                            <input type="text" style="display: none;" name="overview" value="{{r[7]}}" />
+                                            <input type="text" style="display: none;" name="backdrop" value="{{r[8]}}" />
+                                            <button class="btn btn-info" type="submit">Watch Now</button>
+    
+                                        </form>
+    
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-star-fill me-2" width="iem" height="1em" style="color: yellow;"></i>
+                                        <small>{{r[3]}}</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-clock-fill me-2" width="iem" height="1em" style="color: black;"></i>
+                                        <small>{{r[2]}}</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- romance movies ends============================================================================================ -->
+
+
+    <!-- family movies starts============================================================================================ -->
+    <div class="week-trending container my-5  align-items-center py-2 shadow">
+        <div class="row">
+            <div class="heading d-flex">
+                <h3 class="text-white">Popular in Family</h3>
+                <div style="margin-left: 900px;">
+                    <form action="/similar_movies" method="POST">
+                        <input type="text" style="display: none;" name="var" value="family" />
+                        <button class="btn btn-primary" type="submit">See more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="movies">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    {% for r in family_movies %}
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white  rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <img src={{r[5]}} alt="">
+    
+                                <h2 class="pb-2 mt-2  display-6 lh-1 fw-bold">{{r[0]}}</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <form action="/movie" method="POST">
+                                            <input type="text" style="display: none;" name="title" value="{{r[0]}}" />
+                                            <input type="text" style="display: none;" name="id" value="{{r[1]}}" />
+                                            <input type="text" style="display: none;" name="runtime" value="{{r[2]}}" />
+                                            <input type="text" style="display: none;" name="rating" value="{{r[3]}}" />
+                                            <input type="text" style="display: none;" name="ott" value="{{r[4]}}" />
+                                            <input type="text" style="display: none;" name="poster" value="{{r[5]}}" />
+                                            <input type="text" style="display: none;" name="vote" value="{{r[6]}}" />
+                                            <input type="text" style="display: none;" name="overview" value="{{r[7]}}" />
+                                            <input type="text" style="display: none;" name="backdrop" value="{{r[8]}}" />
+                                            <button class="btn btn-info" type="submit">Watch Now</button>
+    
+                                        </form>
+    
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-star-fill me-2" width="iem" height="1em" style="color: yellow;"></i>
+                                        <small>{{r[3]}}</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-clock-fill me-2" width="iem" height="1em" style="color: black;"></i>
+                                        <small>{{r[2]}}</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- family movies ends============================================================================================ -->
+
+
+    <!-- crime movies starts============================================================================================ -->
+    <div class="week-trending container my-5  align-items-center py-2 shadow">
+        <div class="row">
+            <div class="heading d-flex">
+                <h3 class="text-white">Popular in Crime</h3>
+                <div style="margin-left: 900px;">
+                    <form action="/similar_movies" method="POST">
+                        <input type="text" style="display: none;" name="var" value="crime" />
+                        <button class="btn btn-primary" type="submit">See more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="movies">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    {% for r in crime_movies %}
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white  rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <img src={{r[5]}} alt="">
+    
+                                <h2 class="pb-2 mt-2  display-6 lh-1 fw-bold">{{r[0]}}</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <form action="/movie" method="POST">
+                                            <input type="text" style="display: none;" name="title" value="{{r[0]}}" />
+                                            <input type="text" style="display: none;" name="id" value="{{r[1]}}" />
+                                            <input type="text" style="display: none;" name="runtime" value="{{r[2]}}" />
+                                            <input type="text" style="display: none;" name="rating" value="{{r[3]}}" />
+                                            <input type="text" style="display: none;" name="ott" value="{{r[4]}}" />
+                                            <input type="text" style="display: none;" name="poster" value="{{r[5]}}" />
+                                            <input type="text" style="display: none;" name="vote" value="{{r[6]}}" />
+                                            <input type="text" style="display: none;" name="overview" value="{{r[7]}}" />
+                                            <input type="text" style="display: none;" name="backdrop" value="{{r[8]}}" />
+                                            <button class="btn btn-info" type="submit">Watch Now</button>
+    
+                                        </form>
+    
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-star-fill me-2" width="iem" height="1em" style="color: yellow;"></i>
+                                        <small>{{r[3]}}</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-clock-fill me-2" width="iem" height="1em" style="color: black;"></i>
+                                        <small>{{r[2]}}</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- crime movies ends============================================================================================ -->
+
+
+    <!-- comedy movies starts============================================================================================ -->
+    <div class="week-trending container my-5  align-items-center py-2 shadow">
+        <div class="row">
+            <div class="heading d-flex">
+                <h3 class="text-white">Popular in Comedy</h3>
+                <div style="margin-left: 900px;">
+                    <form action="/similar_movies" method="POST">
+                        <input type="text" style="display: none;" name="var" value="comedy" />
+                        <button class="btn btn-primary" type="submit">See more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="movies">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    {% for r in comedy_movies %}
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white  rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <img src={{r[5]}} alt="">
+    
+                                <h2 class="pb-2 mt-2  display-6 lh-1 fw-bold">{{r[0]}}</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <form action="/movie" method="POST">
+                                            <input type="text" style="display: none;" name="title" value="{{r[0]}}" />
+                                            <input type="text" style="display: none;" name="id" value="{{r[1]}}" />
+                                            <input type="text" style="display: none;" name="runtime" value="{{r[2]}}" />
+                                            <input type="text" style="display: none;" name="rating" value="{{r[3]}}" />
+                                            <input type="text" style="display: none;" name="ott" value="{{r[4]}}" />
+                                            <input type="text" style="display: none;" name="poster" value="{{r[5]}}" />
+                                            <input type="text" style="display: none;" name="vote" value="{{r[6]}}" />
+                                            <input type="text" style="display: none;" name="overview" value="{{r[7]}}" />
+                                            <input type="text" style="display: none;" name="backdrop" value="{{r[8]}}" />
+                                            <button class="btn btn-info" type="submit">Watch Now</button>
+    
+                                        </form>
+    
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-star-fill me-2" width="iem" height="1em" style="color: yellow;"></i>
+                                        <small>{{r[3]}}</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-clock-fill me-2" width="iem" height="1em" style="color: black;"></i>
+                                        <small>{{r[2]}}</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- comedy movies ends============================================================================================ -->
+
+
+    <!-- sci-fi movies starts============================================================================================ -->
+    <div class="week-trending container my-5  align-items-center py-2 shadow">
+        <div class="row">
+            <div class="heading d-flex">
+                <h3 class="text-white">Popular in Sci-Fi</h3>
+                <div style="margin-left: 900px;">
+                    <form action="/similar_movies" method="POST">
+                        <input type="text" style="display: none;" name="var" value="sci-fi" />
+                        <button class="btn btn-primary" type="submit">See more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="movies">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    {% for r in scifi_movies %}
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white  rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <img src={{r[5]}} alt="">
+    
+                                <h2 class="pb-2 mt-2  display-6 lh-1 fw-bold">{{r[0]}}</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <form action="/movie" method="POST">
+                                            <input type="text" style="display: none;" name="title" value="{{r[0]}}" />
+                                            <input type="text" style="display: none;" name="id" value="{{r[1]}}" />
+                                            <input type="text" style="display: none;" name="runtime" value="{{r[2]}}" />
+                                            <input type="text" style="display: none;" name="rating" value="{{r[3]}}" />
+                                            <input type="text" style="display: none;" name="ott" value="{{r[4]}}" />
+                                            <input type="text" style="display: none;" name="poster" value="{{r[5]}}" />
+                                            <input type="text" style="display: none;" name="vote" value="{{r[6]}}" />
+                                            <input type="text" style="display: none;" name="overview" value="{{r[7]}}" />
+                                            <input type="text" style="display: none;" name="backdrop" value="{{r[8]}}" />
+                                            <button class="btn btn-info" type="submit">Watch Now</button>
+    
+                                        </form>
+    
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-star-fill me-2" width="iem" height="1em" style="color: yellow;"></i>
+                                        <small>{{r[3]}}</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-clock-fill me-2" width="iem" height="1em" style="color: black;"></i>
+                                        <small>{{r[2]}}</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- sci-fi movies ends============================================================================================ -->
+
+
+    <!-- horror movies starts============================================================================================ -->
+    <div class="week-trending container my-5  align-items-center py-2 shadow">
+        <div class="row">
+            <div class="heading d-flex">
+                <h3 class="text-white">Popular in Horror</h3>
+                <div style="margin-left: 900px;">
+                    <form action="/similar_movies" method="POST">
+                        <input type="text" style="display: none;" name="var" value="horror" />
+                        <button class="btn btn-primary" type="submit">See more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="movies">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    {% for r in horror_movies %}
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white  rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <img src={{r[5]}} alt="">
+    
+                                <h2 class="pb-2 mt-2  display-6 lh-1 fw-bold">{{r[0]}}</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <form action="/movie" method="POST">
+                                            <input type="text" style="display: none;" name="title" value="{{r[0]}}" />
+                                            <input type="text" style="display: none;" name="id" value="{{r[1]}}" />
+                                            <input type="text" style="display: none;" name="runtime" value="{{r[2]}}" />
+                                            <input type="text" style="display: none;" name="rating" value="{{r[3]}}" />
+                                            <input type="text" style="display: none;" name="ott" value="{{r[4]}}" />
+                                            <input type="text" style="display: none;" name="poster" value="{{r[5]}}" />
+                                            <input type="text" style="display: none;" name="vote" value="{{r[6]}}" />
+                                            <input type="text" style="display: none;" name="overview" value="{{r[7]}}" />
+                                            <input type="text" style="display: none;" name="backdrop" value="{{r[8]}}" />
+                                            <button class="btn btn-info" type="submit">Watch Now</button>
+    
+                                        </form>
+    
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-star-fill me-2" width="iem" height="1em" style="color: yellow;"></i>
+                                        <small>{{r[3]}}</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-clock-fill me-2" width="iem" height="1em" style="color: black;"></i>
+                                        <small>{{r[2]}}</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- horror movies ends============================================================================================ -->
+
+    <!-- thriller movies starts============================================================================================ -->
+    <div class="week-trending container my-5  align-items-center py-2 shadow">
+        <div class="row">
+            <div class="heading d-flex">
+                <h3 class="text-white">Popular in Thriller</h3>
+                <div style="margin-left: 900px;">
+                    <form action="/similar_movies" method="POST">
+                        <input type="text" style="display: none;" name="var" value="thriller" />
+                        <button class="btn btn-primary" type="submit">See more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="movies">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    {% for r in thriller_movies %}
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white  rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <img src={{r[5]}} alt="">
+    
+                                <h2 class="pb-2 mt-2  display-6 lh-1 fw-bold">{{r[0]}}</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <form action="/movie" method="POST">
+                                            <input type="text" style="display: none;" name="title" value="{{r[0]}}" />
+                                            <input type="text" style="display: none;" name="id" value="{{r[1]}}" />
+                                            <input type="text" style="display: none;" name="runtime" value="{{r[2]}}" />
+                                            <input type="text" style="display: none;" name="rating" value="{{r[3]}}" />
+                                            <input type="text" style="display: none;" name="ott" value="{{r[4]}}" />
+                                            <input type="text" style="display: none;" name="poster" value="{{r[5]}}" />
+                                            <input type="text" style="display: none;" name="vote" value="{{r[6]}}" />
+                                            <input type="text" style="display: none;" name="overview" value="{{r[7]}}" />
+                                            <input type="text" style="display: none;" name="backdrop" value="{{r[8]}}" />
+                                            <button class="btn btn-info" type="submit">Watch Now</button>
+    
+                                        </form>
+    
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-star-fill me-2" width="iem" height="1em" style="color: yellow;"></i>
+                                        <small>{{r[3]}}</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-clock-fill me-2" width="iem" height="1em" style="color: black;"></i>
+                                        <small>{{r[2]}}</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- thriller movies ends============================================================================================ -->
+
+    <!-- Adventure movies starts============================================================================================ -->
+    <div class="week-trending container my-5  align-items-center py-2 shadow">
+        <div class="row">
+            <div class="heading d-flex">
+                <h3 class="text-white">Popular in Adventure</h3>
+                <div style="margin-left: 900px;">
+                    <form action="/similar_movies" method="POST">
+                        <input type="text" style="display: none;" name="var" value="adventure" />
+                        <button class="btn btn-primary" type="submit">See more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="movies">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    {% for r in adventure_movies %}
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white  rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <img src={{r[5]}} alt="">
+    
+                                <h2 class="pb-2 mt-2  display-6 lh-1 fw-bold">{{r[0]}}</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <form action="/movie" method="POST">
+                                            <input type="text" style="display: none;" name="title" value="{{r[0]}}" />
+                                            <input type="text" style="display: none;" name="id" value="{{r[1]}}" />
+                                            <input type="text" style="display: none;" name="runtime" value="{{r[2]}}" />
+                                            <input type="text" style="display: none;" name="rating" value="{{r[3]}}" />
+                                            <input type="text" style="display: none;" name="ott" value="{{r[4]}}" />
+                                            <input type="text" style="display: none;" name="poster" value="{{r[5]}}" />
+                                            <input type="text" style="display: none;" name="vote" value="{{r[6]}}" />
+                                            <input type="text" style="display: none;" name="overview" value="{{r[7]}}" />
+                                            <input type="text" style="display: none;" name="backdrop" value="{{r[8]}}" />
+                                            <button class="btn btn-info" type="submit">Watch Now</button>
+    
+                                        </form>
+    
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-star-fill me-2" width="iem" height="1em" style="color: yellow;"></i>
+                                        <small>{{r[3]}}</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-clock-fill me-2" width="iem" height="1em" style="color: black;"></i>
+                                        <small>{{r[2]}}</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Adventure movies ends============================================================================================ -->
+
+    <!-- animation movies starts============================================================================================ -->
+    <div class="week-trending container my-5  align-items-center py-2 shadow">
+        <div class="row">
+            <div class="heading d-flex">
+                <h3 class="text-white">Popular in Animation</h3>
+                <div style="margin-left: 900px;">
+                    <form action="/similar_movies" method="POST">
+                        <input type="text" style="display: none;" name="var" value="animation" />
+                        <button class="btn btn-primary" type="submit">See more</button>
+                    </form>
+                </div>
+            </div>
+            <div class="movies">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    {% for r in animation_movies %}
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white  rounded-4 shadow-lg">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <img src={{r[5]}} alt="">
+    
+                                <h2 class="pb-2 mt-2  display-6 lh-1 fw-bold">{{r[0]}}</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <form action="/movie" method="POST">
+                                            <input type="text" style="display: none;" name="title" value="{{r[0]}}" />
+                                            <input type="text" style="display: none;" name="id" value="{{r[1]}}" />
+                                            <input type="text" style="display: none;" name="runtime" value="{{r[2]}}" />
+                                            <input type="text" style="display: none;" name="rating" value="{{r[3]}}" />
+                                            <input type="text" style="display: none;" name="ott" value="{{r[4]}}" />
+                                            <input type="text" style="display: none;" name="poster" value="{{r[5]}}" />
+                                            <input type="text" style="display: none;" name="vote" value="{{r[6]}}" />
+                                            <input type="text" style="display: none;" name="overview" value="{{r[7]}}" />
+                                            <input type="text" style="display: none;" name="backdrop" value="{{r[8]}}" />
+                                            <button class="btn btn-info" type="submit">Watch Now</button>
+    
+                                        </form>
+    
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <i class="bi bi-star-fill me-2" width="iem" height="1em" style="color: yellow;"></i>
+                                        <small>{{r[3]}}</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-clock-fill me-2" width="iem" height="1em" style="color: black;"></i>
+                                        <small>{{r[2]}}</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- action movies ends============================================================================================ -->
+
+    <!-- footer start ==================================================================================================== -->
+    <div class="container mt-5 pt-5">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <img src="/static/img/preview.jpg" alt="Bootstrap" width="32" height="32"
+                        class="rounded-circle border border-white">
+                </a>
+                <span class="mb-3 mb-md-0 text-light">© 2022 WatchFav</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-muted" href="https://www.linkedin.com/in/yadavbalbir/">
+                        <i class="bi-linkedin" style="color: #0A66C2; font-size: x-large;"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="#">
+                        <i class="bi bi-instagram" style="color: #E64A52; font-size: x-large;"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="#">
+                        <i class="bi bi-twitter" style="color: rgb(29,161,242); font-size: x-large;"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </footer>
+    </div>
+    <!-- footer ends ==================================================================================================== -->
+
+    <!--================ bootstrap Js  ================================================================-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
