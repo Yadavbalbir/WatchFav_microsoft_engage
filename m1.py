@@ -30,7 +30,7 @@ q_movies = q_movies.sort_values('score', ascending=False)
 # Returns a 2D array containg song title, id, runtime, vote_average and website url
 def recommend(num):
     names = []
-    a= np.array(q_movies[['title','id','runtime','vote_average', 'homepage']].head(int(num)))
+    a= np.array(q_movies[['title','id','runtime','vote_average', 'homepage', 'vote_count', 'overview']].head(int(num)))
     for n in a:
         arr = []
         arr.append(n[0])
@@ -40,9 +40,13 @@ def recommend(num):
         arr.append(n[4])
         response = requests.get('https://api.themoviedb.org/3/movie/'+str(arr[1])+'?api_key=8392ec73124468f81442d4565edccad7&language=en-US')
         data = response.json()
-        path ="https://image.tmdb.org/t/p/w185" + data['poster_path']
+        path ="https://image.tmdb.org/t/p/original" + data['poster_path']
         arr.append(path)
         arr[4] = "https://www.themoviedb.org/movie/"+str(arr[1])+"/watch"
+        arr.append(n[5])
+        arr.append(n[6])
+        backdrop = "https://image.tmdb.org/t/p/original" + data['backdrop_path']
+        arr.append(backdrop)
         names.append(arr)
    
     return names
