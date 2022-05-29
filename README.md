@@ -14,7 +14,7 @@
 * [Features](#topfeatures)
 * [Features](#efeatures)
 * [Tech Stack Used/ Dependencies](#tech-stack)
-* [Agile methodology followed during the build](#agile)
+* [Timeline](#timeline)
 * [Getting Started/ Setup](#getting-started)
 * [Usage Guide/ Application flow](#usage)
 * [Hosting](#hosting)
@@ -56,19 +56,18 @@
 <a id="tech-stack"></a>
 ## 💻 Tech Stack Used/ Dependencies
 
-<img src = "https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white"><img src = "https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"><img src = "https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"><img src = "https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"><img src = "https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white"><img src = "https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white"><img src = "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"><img src = "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"><img src = "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"><img src = "https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"><img src = "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"><img src = "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white"><img src = "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white"><img src = "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white"><img src = "https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white"><img src = "https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"><img src = ""><img src = ""><img src = "">
+<img src = "https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white"><img src = "https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"><img src = "https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"><img src = "https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"><img src = "https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white"><img src = "https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white"><img src = "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"><img src = "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"><img src = "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"><img src = "https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"><img src = "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"><img src = "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white"><img src = "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white"><img src = "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white"><img src = "https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white"><img src = "https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white">
 
 
-<a id="agile"></a>
-## ⚡️ Agile methodology followed during the build
+<a id="timeline"></a>
+## ⚡️ WatchFav Timeline
 
-Agile is an easy to handle and flexible development process which relies on light(short-termed) planning procedures. It allows faster adjustments and reviewing with an aim of keeping the principle of zero bug bounce. Implementation of this method is done via a disciplined work breakdown, which I handled as depicted in the following :
+I'm being student from mechanical engineering having knowledge of basic DSA and enthusiasm for software development. It has been first ever project for me that is build end-to-end right from scratch. It wasn't possible without consistent & punctual daily routines. It has been one of the best learning experiences I encounter till now where I have learned so many tech stacks and not only learned but implemented as well. 
 
-<img width="705" alt="Screenshot 2021-07-12 at 12 07 30 PM" src="https://user-images.githubusercontent.com/75029142/125244384-e4a40800-e30c-11eb-802b-6b202b4db10d.png">
+Here is 4-week consisted timeline what is followed to build this project.
 
-<img width="707" alt="Screenshot 2021-07-12 at 12 06 17 PM" src="https://user-images.githubusercontent.com/75029142/125244395-e8378f00-e30c-11eb-8484-0f4da729911f.png">
+<img width="1432" alt="landing" src="screenshots\timeline.png">
 
-<img width="710" alt="Screenshot 2021-07-12 at 12 08 22 PM" src="https://user-images.githubusercontent.com/75029142/125244398-e968bc00-e30c-11eb-8185-526e772dfab9.png">
 
 
 
