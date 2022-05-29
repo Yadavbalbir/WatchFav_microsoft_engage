@@ -7,7 +7,7 @@
 
 
 
-<img width="1432" alt="Screenshot 2021-07-09 at 7 26 00 PM" src="https://user-images.githubusercontent.com/75029142/125091312-eb086900-e0ed-11eb-9b7b-3f05d7152a36.png">
+<img width="1432" alt="landing" src="screenshots\homepage_carousel.png">
 
 
 ### 📌 Table of Contents
@@ -55,27 +55,8 @@
 <a id="tech-stack"></a>
 ## 💻 Tech Stack Used/ Dependencies
 
-<p><img alt="Python" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-plain-wordmark.svg" width="40" height="40"/><img alt="HTML" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain-wordmark.svg"width="40" height="40"/><img alt="CSS" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain-wordmark.svg" width="40" height="40"/><img alt="Bootstrap" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" width="40" height="40"/><img alt="Vs Code" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-plain-wordmark.svg" width="40" height="40"/><img alt="Git" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-plain-wordmark.svg" width="40" height="40"/><img alt="Github" src="https://github.com/vorillaz/devicons/blob/master/!SVG/github_badge.svg" width="40" height="40"/></p> ![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white)
+<img src = "https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white"><img src = "https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"><img src = "https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"><img src = "https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"><img src = "https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white"><img src = "https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white"><img src = "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"><img src = "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"><img src = "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"><img src = "https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"><img src = "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"><img src = "https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white"><img src = "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white"><img src = "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white"><img src = "https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white"><img src = "https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"><img src = ""><img src = ""><img src = "">
 
-***React*** : Front-end JavaScript library for building user interfaces or UI components.
-
-***React Router Dom*** : Responsibile for rendering UI components according to the URL paths.
-
-***Express*** : Back end web application framework for Node.js (a JavaScript runtime environment).
-
-***Firebase*** : Google-backed application development software. Specifically used here for user authentication and storage(Firestore Database+Storage) of chats, files, etc. 
-
-***Simple Peer*** : Node.js style API for WebRTC, used for developing video and data channels.
-
-***Socket.IO*** : JavaScript library to enable realtime, bi-directional communication between web client and server. 
-
-***Material UI*** : Design language developed by Google which lets developers incorporate pre-built react components. Specifically used here only for designing the video chat and "Add files" modal.
-
-***Tailwind CSS*** : A utility-first CSS framework for rapidly building custom user interfaces. Used by adding the required styles as classes.
-
-***CORS*** : A HTTP-header based mechanism that allows a server to indicate any other origins (domain, scheme, or port) than its own from which a browser should permit loading of resources. Used here for communicating between server and client side hosted on Heroku and Netlify respectively.
-
-***Others*** : React icons and react-copy-to-clipboard.
 
 <a id="agile"></a>
 ## ⚡️ Agile methodology followed during the build
