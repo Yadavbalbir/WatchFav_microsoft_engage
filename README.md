@@ -78,14 +78,13 @@ Here is 4-week consisted timeline what is followed to build this project.
 1. Clone this repository.
 
 ```javascript
-  git clone https://github.com/apoorva-s1301/agile-streams.git
+  git clone https://github.com/Yadavbalbir/WatchFav_microsoft_engage.git
 ```  
 
-2. Head over to client directory and install dependencies by running the following in terminal.
+2. Head over to main directory and install dependencies by running the following in terminal.
 
 ```javascript
-  cd client
-  npm install
+   pip install -r requirements.txt
 ```
 
 3. Head over to server directory and install dependencies by running the following in terminal.
