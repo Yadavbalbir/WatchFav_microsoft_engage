@@ -7,7 +7,7 @@
 
 
 
-<img width="1432" alt="landing" src="screenshots\homepage_carousel.png">
+<img width="1432" alt="landing" src="screenshots\landing_intro.png">
 
 
 ### 📌 Table of Contents
@@ -33,6 +33,7 @@
 - Popular Movies
 - Get Direct Access to OTT Links having that particular movie
 
+<img width="1432" alt="landing" src="screenshots\main_features.png">
 
 <a id="efeatures"></a>
 ## 🚀 Essential Features
