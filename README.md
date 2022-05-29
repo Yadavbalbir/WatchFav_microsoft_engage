@@ -159,7 +159,7 @@ Similarily we have popular movies corressponding to each and every genre. If you
 ## Movie Page
 
 Now let's click **watch now** at one of the movies shown on our website
-<img width="1436" alt="carousel" src="screenshots\result_see_more.png">
+<img width="1436" alt="carousel" src="screenshots\watch_now.png">
 
 Once you click watch now,  you'll land on movie page consisting the dummy video player but real **title**, **overview**, **OTT Link**, **rating**, **vote count**, **release_date or duration in mins**, **language**. 
 This is how it look like
@@ -177,19 +177,32 @@ Now scroll down on this page you will see **Recommended for you** section which 
 
 ## separate pages for testing different models
 
+- ### Test page for Model-1
+    this is how our model-1 webpage looklike. You can enter any number of movies you want, It will give the results based on weighted Avag and sorted with sorting algorithms to get the movies with highest weighted avag movie at the top
 
-<a id="challenges"></a>
-## 💡 Challenges faced and learnings
+    <img width="1436" alt="carousel" src="screenshots\weighted_avg.png">
 
-- Had very basic knowledge of React before the Microsoft Engage Program's qualification announcement. Spent about 168hrs learning the new concepts attached to React and then began the design-build process of this project.
-- For my love of frontend styling, I took up the challenge of cloning the original Team's UI delicately. Improved my CSS skills vastly by practising them here.
-- Never implemented user authentication before. Understood how to register apps on Github and Twitter and make use of their API's for user authentication.
-- Got my Twitter application (used for authentication) suspended twice, due to it mistakenly being caught up in automated abusive API disabling spam groups. Had to raise support tickets to get the app re-enabled, despite no API violations from my end.
-- Never incorporated a realtime database storage like Firebase to my projects before. Comprehensively read through the cloud firestore documentation and grasped the concepts within a day's time.
-- Came across a memory-leak bug while building a socket connection from client side to server side. Couldn't get my doubt resolved even from Stack Overflow. Took me about one week to resolve it by thorough researching of the hints provided by my mentor. Saved my project from getting disqualified because this bug was a barrier in implementing the minimum requirement feature of the Engage'21 Challenge.
-- Deployed a full stack app with frontend, backend and database for the first time. Struggled through it but documentations and tutorials came to the rescue as always. 
-- Learnt about Cross-Origin Resource Sharing (CORS) and proxies.
+    Now Let's enter 10 in the form input and hit **Recommend** button
+    These are results of top movies in our database sorted with sorting algorithms
 
+    <img width="1436" alt="carousel" src="screenshots\result_model-1.png">
+    
+- ### Test Webpage for our model-2
+    this is how our model-2 webpage look like. You have to enter the title of movie watching or watched and number of movies you want in recommendation. It is based on **TF*TDF** and **Cosine_similarity** algorithms. in model-2 we consider **overview** of movies to apply our algorithms and then sort the results
+
+     <img width="1436" alt="carousel" src="screenshots\model-2.png">
+
+     Now let's enter title : "Avengers: Age of Ultron"
+                     Number : 5
+    these are the top 5 recommended movies for Avengers look like
+
+     <img width="1436" alt="carousel" src="screenshots\result_model-2.png">
+
+- ### Test webpage for our model-3
+    same approach as above. more details are available on webpage
+
+- ### Test webpage for our hybrid-4
+    same as above. more details are available on webpage
 
 <a id="scope"></a>
 ## 🚧 Future Scope/ What's next?
