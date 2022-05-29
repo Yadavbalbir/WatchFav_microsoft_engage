@@ -17,12 +17,10 @@
 * [Timeline](#timeline)
 * [Getting Started/ Setup](#getting-started)
 * [Usage Guide/ Application flow](#usage)
-* [Hosting](#hosting)
 * [Challenges faced and learnings](#challenges)
 * [Future Scope/ What's next?](#scope)
 * [Resources](#resources)
-* [Bug Reporting](#bug)
-* [Feature Requests](#feature-request)
+
 
 
 <a id="topfeatures"></a>
@@ -81,176 +79,104 @@ Here is 4-week consisted timeline what is followed to build this project.
   git clone https://github.com/Yadavbalbir/WatchFav_microsoft_engage.git
 ```  
 
-2. Head over to main directory and install dependencies by running the following in terminal.
+2. Head over to project directory and install dependencies by running the following in terminal.
 
 ```javascript
    pip install -r requirements.txt
 ```
 
-3. Head over to server directory and install dependencies by running the following in terminal.
+3. To start this app run the following command in terminal in project directory
 
 ```javascript
-  cd server
-  npm install
+  python app.py
 ```
 
-4. Follow the directory flow client --> src --> firebase.js and add your own Firebase configuration object (after taking necessary project setup steps on Firebase).
-  
-  ```javascript
-    //Configure firebase here
-    const firebaseConfig = {
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID,
-    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
-    };
-  ```
-  
-5. Follow the directory flow client --> src --> components --> MeetPage.jsx
-   - Comment the line : 
-    ```javascript
-      socket = io.connect('https://engage-ms-teams-clone.herokuapp.com/')
-    ```
-   - Uncomment the line(To connect to local backend server) : 
-   ```javascript
-      socket = io.connect('http://localhost:5000')
-   ``` 
-
-6. OPTIONAL : Follow the directory flow client --> src --> components --> OnLoginCalendarPage.jsx. Embed your own Outlook calendar by replacing the iframe source.
-
-  ```javascript
-    <iframe title="calendar" 
-         src="Add your calendar's source here" 
-         style={{width:"100%", height:"100%",padding:"1rem"}} >
-    </iframe>
-  ```
-      
-7. In both the directories (client and server), run the following to run server and client sides separately in your browser.
+4. If requirements.txt throws error then run the following commands in the terminal
 
 ```javascript
-  npm start
+  pip install flask
+  pip install pandas
+  pip install requests
+  pip install sklearn
 ```
 
-8. Client-side will run on `http://localhost:3000` and the server-side will run on `http://localhost:5000`
+5. Now run the app again
+```javascript
+  python app.py
+```
+  
+5. App will run on `http://127.0.0.1:5000/`, so click it and head over to browser to view web app.
+
 
 <a id="usage"></a>
 ## 📖 Usage guide/ Application flow
 
-Visit the hosted web application at https://engage-ms-teams-clone.netlify.app/
+Visit the hosted web application at "link"
 
-Test email: `test@sample.microsoft.com`
 
-Test password: `1234testsample#`
+## Landing Page 
 
-### Landing Page 
-Continue Signing Up/In by clicking the highlighted buttons.
+This page consists details about the project like features, timeline, algorithms and approaches. This is **not** our home page of the project. 
 
-All links except those of Sign In and Sign Up lead to the original Microsoft Teams website (these have been added just for information purposes, no copyright infringement is intended).
+Click **Get Started** to enter in our main project
 
-<img width="1432" alt="Screenshot 2021-07-09 at 7 26 00 PM 2 2" src="https://user-images.githubusercontent.com/75029142/125098738-ec895f80-e0f4-11eb-82e3-8a659a3aa4d3.png">
+<img width="1432" alt="landing page" src="screenshots\Landing_with_annotation.png">
 
-### Sign Up Page
-Enter all the required fields for successful sign up. Make sure the password strength is strong.
+## Home Page 
+Once we click Get Started, we will enter into the home page of our project. which consists the following things
 
-<img width="1436" alt="Screenshot 2021-07-09 at 8 38 56 PM" src="https://user-images.githubusercontent.com/75029142/125100202-74239e00-e0f6-11eb-87f8-59cba940f842.png">
+- ### Carousel having trending movies today
+    <img width="1436" alt="carousel" src="screenshots\homepage_carousel.png">
 
-The following message gets displayed on successful sign up. You can directly head over to the sign in page from here or go back to the landing page to find the sign in button.
+- ### Popular Movies 
+    <img width="1436" alt="carousel" src="screenshots\popular_movies.png">
 
-<img width="442" alt="Screenshot 2021-07-09 at 8 40 00 PM" src="https://user-images.githubusercontent.com/75029142/125100936-45f28e00-e0f7-11eb-969d-ec0adf8cddf3.png">
+- ### Top Rated Movies 
+    <img width="1436" alt="carousel" src="screenshots\top_rated.png">
 
-In case of an error, the following message would show up.
+- ### Today's Trending Movies 
+    <img width="1436" alt="carousel" src="screenshots\trending_today.png">
 
-<img width="443" alt="Screenshot 2021-07-09 at 8 40 59 PM" src="https://user-images.githubusercontent.com/75029142/125100941-4723bb00-e0f7-11eb-8475-1353dc435811.png">
+- ### This week Trending Movies 
+    <img width="1436" alt="carousel" src="screenshots\trending_week.png">
 
-### Sign In Page
-You can either sign in using the email/password you used to sign yourself up previously or you can click the other options bar to authenticate yourself using Google/Github/Twitter.
+- ### popular in action Movies
+    <img width="1436" alt="carousel" src="screenshots\popular_action.png">
 
-<img width="1440" alt="Screenshot 2021-07-09 at 8 51 38 PM" src="https://user-images.githubusercontent.com/75029142/125102151-9f0ef180-e0f8-11eb-9f07-184d575bfb45.png">
+- ### popular in Drama Movies 
+    <img width="1436" alt="carousel" src="screenshots\popular_drama.png">
 
-<img width="1440" alt="Screenshot 2021-07-09 at 8 52 17 PM" src="https://user-images.githubusercontent.com/75029142/125102157-a0401e80-e0f8-11eb-94ca-7b051c35f282.png">
+Similarily we have popular movies corressponding to each and every genre. If you want to see more movies than the limited movies shown on home page then click to **see more**. You will land the website which have same category movies which you wanted to see. 
 
-After entering your email/password, pressing continue and a successfull sign in, you will be directed to the Streams app.
-Else an error can through up, similar to the sign up error show earlier.
+**Let's see more Horror Movies**
+<img width="1436" alt="carousel" src="screenshots\see_more.png">
 
-In case you use other sign in options, you will have a pop up/redirect window to sign in using whichever method you chose.
-If successful, you will see a continue button as below, click on it to be directed to the Streams app.
+**Results of see more Horror Movies**
+<img width="1436" alt="carousel" src="screenshots\result_see_more.png">
 
-<img width="439" alt="Screenshot 2021-07-09 at 8 52 32 PM" src="https://user-images.githubusercontent.com/75029142/125102871-5efc3e80-e0f9-11eb-8807-74d838a13f77.png">
 
-### Post-SignIn Dashboard
-The default dashboard appears as follows.
 
-<img width="1440" alt="Screenshot 2021-07-09 at 9 13 30 PM" src="https://user-images.githubusercontent.com/75029142/125107106-0b402400-e0fe-11eb-8ae9-60ed3b078314.png">
+## Movie Page
 
-Avatar Drop-Down 
+Now let's click **watch now** at one of the movies shown on our website
+<img width="1436" alt="carousel" src="screenshots\result_see_more.png">
 
-Your avatar/Profile picture, user name, email and availability status are visible here. You can also sign out of the dashboard from here.
+Once you click watch now,  you'll land on movie page consisting the dummy video player but real **title**, **overview**, **OTT Link**, **rating**, **vote count**, **release_date or duration in mins**, **language**. 
+This is how it look like
+<img width="1436" alt="carousel" src="screenshots\watch_thor_not_annotated.png">
 
-<img width="373" alt="Screenshot 2021-07-09 at 9 13 55 PM" src="https://user-images.githubusercontent.com/75029142/125107335-565a3700-e0fe-11eb-8ac8-12363a1babee.png">
+Annotated img
+<img width="1436" alt="carousel" src="screenshots\watch_thor.png">
 
-### Chatting Tab
 
-<img width="1440" alt="Screenshot 2021-07-09 at 10 52 53 PM" src="https://user-images.githubusercontent.com/75029142/125115477-ffa62a80-e108-11eb-8091-82333e0cd942.png">
+Now scroll down on this page you will see **Recommended for you** section which consists of movies recommended based on watch you are watching now. 
 
-Chats display as follows :
+<img width="1436" alt="carousel" src="screenshots\recommended_for_thor.png">
 
-<img width="1440" alt="Screenshot 2021-07-09 at 9 18 59 PM" src="https://user-images.githubusercontent.com/75029142/125111067-0e89de80-e103-11eb-9171-53f5b742bafe.png">
 
-Video call component :
 
-<img width="1440" alt="Screenshot 2021-07-09 at 11 15 12 PM" src="https://user-images.githubusercontent.com/75029142/125119436-bd7fe780-e10e-11eb-8191-e4389f1a4503.png">
+## separate pages for testing different models
 
-### Calendar Tab
-
-The admin's calendar is displayed here. The admin can add events to this calendar using their Outlook account and these events will be visible to all the application users.
-
-<img width="1440" alt="Screenshot 2021-07-09 at 9 19 41 PM" src="https://user-images.githubusercontent.com/75029142/125116571-890a2c80-e10a-11eb-98a7-9cbe5105c340.png">
-
-### Files Tab
-
-Upload files by clicking on the "Add files" button. The files would be displayed is the recent section. Clicking on a file in the recent section opens a new tab from where you can download the same file.
-
-<img width="1440" alt="Screenshot 2021-07-10 at 4 19 43 AM" src="https://user-images.githubusercontent.com/75029142/125160509-eea5f980-e19a-11eb-8a52-6b0215be07e3.png">
-
-### Sign Out Page
-
-Signing out using the avatar dropdown will redirect you to the following component.
-
-<img width="1440" alt="Screenshot 2021-07-09 at 9 20 05 PM" src="https://user-images.githubusercontent.com/75029142/125115778-6d525680-e109-11eb-8efa-6692b6674a25.png">
-
-<a id="hosting"></a>
-## ✅ Hosting 
-
-- Frontend is hosted at https://engage-ms-teams-clone.netlify.app/
-- Backend server is hosted at https://engage-ms-teams-clone.herokuapp.com/
-
-To host the server on Heroku :
-
-1. Sign up/Log in to Heroku.
-2. Create a new app from the dashboard.
-3. Install the Heroku CLI if you don't have it already and log into your account using the CLI.
-4. Create a local git repository of this project and make a remote repository for Heroku.
-5. Commit your code to the repo if not already done.(Make sure a Procfile of the server's entry point is present)
-6. Push changes to the Heroku remote repository.
-7. Server will be successfully deployed to Heroku.
-
-To host the react app's frontend on Netlify :
-
-1. Create an optimised production build by running the following command in terminal.
-```javascript
-  cd client
-  npm run build
-```
-2. Sign up/Log in to Netlify.
-3. Go to the sites section.
-4. Drag and drop the build folder here.
-5. Go to site settings and make necessary changes.
-6. Frontend will be successfully deployed to Netlify.
-
-For more information refer to the [guides](#resources).
 
 <a id="challenges"></a>
 ## 💡 Challenges faced and learnings
@@ -268,34 +194,19 @@ For more information refer to the [guides](#resources).
 <a id="scope"></a>
 ## 🚧 Future Scope/ What's next?
 
-- [ ] Dark theme toggler.
-- [ ] Password resetting and email verification on sign up.
-- [ ] Voice calling feature.
-- [ ] Group video chat facility.
-- [ ] Call recording feature.
-- [ ] Speech to text captioning during video calls.
-- [ ] Collaborative text editing and whiteboard.
-- [ ] Custom, user maintained and inbuilt calendar instead of the iframe.
-- [ ] Multiple and simultaneous login from different accounts of the same user.
+- [ ] Adding user authentication.
+- [ ] User Dashboard showing users activity
+- [ ] Add to favourite button on movies which will add movies in users dashboard
+- [ ] Watch Later
+- [ ] Collobrate filtering with the different users available on our website
+
 
 <a id="resources"></a>
 ## 📚 Resources
 
-- [Microsoft Teams Developer Documentation](https://docs.microsoft.com/en-us/microsoftteams/platform/)
-- [React Router Dom Guide](https://reactrouter.com/web/guides/quick-start)
-- [Tailwind CSS Cheat Sheet](https://nerdcave.com/tailwind-cheat-sheet)
-- [React Icons Documentation/Guide](https://react-icons.github.io/react-icons/)
-- [Cloud Firestore Documentation](https://firebase.google.com/docs/firestore)
-- [Simple-Peer Documentation](https://github.com/feross/simple-peer)
-- [Socket.io Tutorial](https://www.youtube.com/watch?v=ZKEqqIO7n-k)
+- [Bootstrap](https://getbootstrap.com/)
+- [HTML](https://www.w3schools.com/html/default.asp)
+- [CSS](https://www.w3schools.com/css/default.asp)
+- [python](https://docs.python.org/3/)
+- [Flask](https://flask.palletsprojects.com/en/2.1.x/)
 - [Heroku Documentation](https://devcenter.heroku.com/categories/reference)
-- [Netlify Docs](https://docs.netlify.com/)
-
-<a id="bug"></a>
-## 🐛 Bug Reporting
-Feel free to [open an issue](https://github.com/apoorva-s1301/agile-streams/issues) on GitHub if you find bugs.
-
-<a id="feature-request"></a>
-## ⭐ Feature Request
-- Feel free to [open an issue](https://github.com/apoorva-s1301/agile-streams/issues) on GitHub to add any additional features you feel could enhance this project.  
-- You can also discuss and provide suggestions to me on [LinkedIn](https://www.linkedin.com/in/apoorva-singh-130/).
